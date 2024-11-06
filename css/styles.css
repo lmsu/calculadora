@@ -1,162 +1,168 @@
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+    font-family: 'FontAwesome'; /* Define el nombre de la fuente como 'FontAwesome' */
+    src: url('../fonts/fontawesome-webfont.eot?v=4.1.0'); /* Ruta al archivo de fuente en formato EOT */
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), /* Ruta al archivo EOT con formato 'embedded-opentype' para IE */
+         url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), /* Ruta al archivo de fuente en formato WOFF */
+         url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), /* Ruta al archivo de fuente en formato TrueType */
+         url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg'); /* Ruta al archivo de fuente en formato SVG */
+    font-weight: normal; /* Define el peso de la fuente como normal */
+    font-style: normal; /* Define el estilo de la fuente como normal */
+  }
+  
+  html {
+    position: relative; /* Posiciona el elemento relativo a su posición normal */
+    min-height: 100%; /* Asegura que el elemento tenga al menos la altura completa de la ventana del navegador */
+  }
+  
+  body {
+    padding-top: 80px; /* Añade un espacio de 80 píxeles en la parte superior */
+    margin-bottom: 60px; /* Añade un margen de 60 píxeles en la parte inferior */
+  }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+  #content {
+      margin-bottom: 25px; /* Añade un margen inferior de 25 píxeles */
+  }
+  
+  .adsbygoogle {
+      margin-bottom: 15px; /* Añade un margen inferior de 15 píxeles */
+  }
 
-body {
-  padding-top: 80px;
-  margin-bottom: 60px;
-}
 
-.breadcrumb {
-    background-color: rgba(0,0,0,.03);
-    border: 1px solid rgba(0,0,0,.125);
-}
+     /* Bloque Nº 2a */  
+  .breadcrumb {
+      background-color: rgba(0,0,0,.03); /* Color de fondo con un ligero tono negro */
+      border: 1px solid rgba(0,0,0,.125); /* Borde de 1 píxel con un color negro semitransparente */
+  }
+  
+  .calculator {
+      width:480px; /* Ancho fijo de 480 píxeles */
+      height:auto; /* Altura automática según el contenido */
+      padding:10px 0; /* Añade un relleno de 10 píxeles en la parte superior e inferior */
+      margin: auto; /* Centra el elemento horizontalmente */
+      background:#232323; /* Color de fondo negro */
+      border:#000 1px solid; /* Borde negro de 1 píxel */
+      border-radius:7px; /* Bordes redondeados de 7 píxeles */
+      -webkit-border-radius:7px; /* Bordes redondeados para navegadores WebKit */
+      -moz-border-radius:7px; /* Bordes redondeados para navegadores Mozilla */
+      overflow: hidden; /* Oculta el contenido que se desborda */
+      text-align: center; /* Centra el texto horizontalmente */
+  }
 
-#content {
-    margin-bottom: 25px;
-}
-
-.adsbygoogle {
-    margin-bottom: 15px;
-}
-
-/* Bloque Nº 3 */
-.footer-content {
-    margin-top: 20px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-.footer a {
-    color: rgba(255,255,255,.5);
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #fff;
-}
-
-.calculator {
-    width:480px;
-    height:auto;
-    padding:10px 0;
-    margin: auto;
-    background:#232323;
-    border:#000 1px solid;
-    border-radius:7px;
-    -webkit-border-radius:7px;
-    -moz-border-radius:7px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.screen {
-    width:424px;
-    height:93px;
-    margin: 12px auto 30px;
-    padding:15px 20px;
-    color:#c0c0c0;
-    text-align: right;
-    font-size: 3em;
-    letter-spacing: 3px;
-    overflow:hidden;
-    border:#000 1px solid;
-    border-radius:7px;
-    -webkit-border-radius:7px;
-    -moz-border-radius:7px;
-    box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
-    -webkit-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
-    -moz-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
-    background-image: -moz-linear-gradient(top, #3e3e3e 0%, #303030 100%);
-    background-image: -webkit-linear-gradient(top, #3e3e3e 0%, #303030 100%);
-    background-image: linear-gradient(top, #3e3e3e 0%, #303030 100%);
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
+ 
+  .screen {
+    width:424px; /* Ancho fijo de 424 píxeles */
+    height:93px; /* Altura fija de 93 píxeles */
+    margin: 12px auto 30px; /* Margen superior de 12 píxeles, centrado horizontalmente, margen inferior de 30 píxeles */
+    padding:15px 20px; /* Relleno de 15 píxeles en la parte superior e inferior, 20 píxeles en los lados */
+    color:#c0c0c0; /* Color del texto gris claro */
+    text-align: right; /* Alinea el texto a la derecha */
+    font-size: 3em; /* Tamaño de fuente de 3em */
+    letter-spacing: 3px; /* Espaciado entre letras de 3 píxeles */
+    overflow:hidden; /* Oculta el contenido que se desborda */
+    border:#000 1px solid; /* Borde negro de 1 píxel */
+    border-radius:7px; /* Bordes redondeados de 7 píxeles */
+    -webkit-border-radius:7px; /* Bordes redondeados para navegadores WebKit */
+    -moz-border-radius:7px; /* Bordes redondeados para navegadores Mozilla */
+    box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px; /* Sombra interna */
+    -webkit-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px; /* Sombra interna para navegadores WebKit */
+    -moz-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px; /* Sombra interna para navegadores Mozilla */
+    background-image: -moz-linear-gradient(top, #3e3e3e 0%, #303030 100%); /* Gradiente de fondo para navegadores Mozilla */
+    background-image: -webkit-linear-gradient(top, #3e3e3e 0%, #303030 100%); /* Gradiente de fondo para navegadores WebKit */
+    background-image: linear-gradient(top, #3e3e3e 0%, #303030 100%); /* Gradiente de fondo */
+    -moz-box-sizing:border-box; /* Box-sizing para navegadores Mozilla */
+    -webkit-box-sizing:border-box; /* Box-sizing para navegadores WebKit */
+    box-sizing:border-box; /* Box-sizing para incluir el borde y el relleno en el tamaño total del elemento */
 }
 
 .buttons {
-    padding:0;
-    width:423px;
-    margin:auto;
-    overflow: hidden;
-    list-style: none;
+    padding:0; /* Sin relleno */
+    width:423px; /* Ancho fijo de 423 píxeles */
+    margin:auto; /* Centra el elemento horizontalmente */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    list-style: none; /* Elimina los estilos de lista */
 }
 
 .buttons li {
-     display:inline;
-     float:left;
-     padding:0px;
-     margin-right:13px;
-     margin-bottom:10px;
+     display:inline; /* Muestra los elementos en línea */
+     float:left; /* Flota los elementos a la izquierda */
+     padding:0px; /* Sin relleno */
+     margin-right:13px; /* Margen derecho de 13 píxeles */
+     margin-bottom:10px; /* Margen inferior de 10 píxeles */
 }
 
 .buttons li:nth-child(4n) {
-    margin-right:0;
+    margin-right:0; /* Elimina el margen derecho para cada cuarto elemento */
 }
 
 .buttons a {
-    display:block;
-    width:95px;
-    height:68px;
-    padding:18px 0 12px;
-    color:#c0c0c0 !important;
-    font-family: "Myriad Pro", Arial, sans-serif;
-    font-size:1.6em;
-    font-weight: 500;
-    letter-spacing: -2px;
-    background-color:#2f2f2f;
-    border: #000 1px solid;
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow:#000 0px -1px 0px;
-    box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
-    -webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
-    -moz-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
-    background-image:-moz-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
-    background-image:-webkit-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
-    background-image:linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    cursor: pointer;
+    display:block; /* Muestra el elemento como un bloque */
+    width:95px; /* Ancho fijo de 95 píxeles */
+    height:68px; /* Altura fija de 68 píxeles */
+    padding:18px 0 12px; /* Relleno de 18 píxeles en la parte superior, 12 píxeles en la parte inferior */
+    color:#c0c0c0 !important; /* Color del texto gris claro */
+    font-family: "Myriad Pro", Arial, sans-serif; /* Familia de fuentes */
+    font-size:1.6em; /* Tamaño de fuente de 1.6em */
+    font-weight: 500; /* Peso de la fuente medio */
+    letter-spacing: -2px; /* Espaciado entre letras de -2 píxeles */
+    background-color:#2f2f2f; /* Color de fondo gris oscuro */
+    border: #000 1px solid; /* Borde negro de 1 píxel */
+    border-radius:5px; /* Bordes redondeados de 5 píxeles */
+    -webkit-border-radius:5px; /* Bordes redondeados para navegadores WebKit */
+    -moz-border-radius:5px; /* Bordes redondeados para navegadores Mozilla */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-decoration: none; /* Elimina la decoración del texto */
+    text-shadow:#000 0px -1px 0px; /* Sombra del texto */
+    box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px; /* Sombra interna */
+    -webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px; /* Sombra interna para navegadores WebKit */
+    -moz-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px; /* Sombra interna para navegadores Mozilla */
+    background-image:-moz-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%); /* Gradiente de fondo para navegadores Mozilla */
+    background-image:-webkit-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%); /* Gradiente de fondo para navegadores WebKit */
+    background-image:linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%); /* Gradiente de fondo */
+    -moz-box-sizing:border-box; /* Box-sizing para navegadores Mozilla */
+    -webkit-box-sizing:border-box; /* Box-sizing para navegadores WebKit */
+    box-sizing:border-box; /* Box-sizing para incluir el borde y el relleno en el tamaño total del elemento */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el elemento */
 }
 
 .buttons a:active {
-    box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px;
-    background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
-    background-image:-webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%);
-    background-image:linear-gradient(top, #2f2f2f 0%, #363636 100%);
+    box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px; /* Sombra interna cuando el elemento está activo */
+    background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%); /* Gradiente de fondo invertido para navegadores Mozilla */
+    background-image:-webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%); /* Gradiente de fondo invertido para navegadores WebKit */
+    background-image:linear-gradient(top, #2f2f2f 0%, #363636 100%); /* Gradiente de fondo invertido */
 }
 
 .tall {
-    height:151px !important;
+    height:151px !important; /* Altura fija de 151 píxeles con !important para sobrescribir otros estilos */
 }
 
 .wide {
-    width:205px !important;
+    width:205px !important; /* Ancho fijo de 205 píxeles con !important para sobrescribir otros estilos */
 }
 
 .shift {
-    margin-top:-78px;
-}
+    margin-top:-78px; /* Margen superior negativo de 78 píxeles */
+}  
+
+  /* Bloque Nº 3 */
+  .footer-content {
+      margin-top: 20px; /* Añade un margen superior de 20 píxeles */
+  }
+  
+  .footer {
+      position: absolute; /* Posiciona el elemento de forma absoluta */
+      bottom: 0; /* Coloca el elemento en la parte inferior de su contenedor */
+      width: 100%; /* Ancho completo del contenedor */
+      height: 60px; /* Altura de 60 píxeles */
+      line-height: 60px; /* Altura de línea igual a la altura del elemento, centrando verticalmente el contenido */
+      background-color: #f5f5f5; /* Color de fondo gris claro */
+      text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .footer a {
+      color: rgba(255,255,255,.5); /* Color del texto blanco semitransparente */
+      text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+  
+  .footer a:hover {
+      color: #fff; /* Cambia el color del texto a blanco puro cuando se pasa el cursor sobre el enlace */
+  }
